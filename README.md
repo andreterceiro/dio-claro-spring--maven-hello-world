@@ -57,3 +57,5 @@ Generates the `.jar` file. Please see the path in the output of this command.
 ## Other artifacts
 
 You can see as example [here](https://maven.apache.org/archetypes/index.html) other artifacts. When you click in the link of an artifact you will can see the "`mvn`" command related to this artifact.
+
+The instructor of the course also mentioned [this website](https://mvnrepository.com/).
