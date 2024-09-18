@@ -52,3 +52,8 @@ If you enconter errors on executing `mvn test` related to versions (talking in g
 ### mvn package
 
 Generates the `.jar` file. Please see the path in the output of this command.
+
+
+## Other artifacts
+
+You can see as example [here](https://maven.apache.org/archetypes/index.html) other artifacts. When you click in the link of an artifact you will can see the "`mvn`" command related to this artifact.
