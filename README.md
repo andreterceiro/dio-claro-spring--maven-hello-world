@@ -59,3 +59,16 @@ Generates the `.jar` file. Please see the path in the output of this command.
 You can see as example [here](https://maven.apache.org/archetypes/index.html) other artifacts. When you click in the link of an artifact you will can see the "`mvn`" command related to this artifact.
 
 The instructor of the course also mentioned [this website](https://mvnrepository.com/).
+
+
+## pom.xml
+
+This is the main file used by Maven. The minimal `pom.xml` looks like this:
+
+![images/basic-pom-xml.png](images/basic-pom-xml.png)
+
+The `pom.xml` file works with inheritance. The "father" is `Super Pom`, related to a spectfic version of `Maven`:
+
+![images/pom-xml-inheritance.png](images/pom-xml-inheritance.png)
+
+The instructor mentioned [this site](https://maven.apache.org/ref/3.0.4/maven-model-builder/super-pom.html). You can override some configuration that you get from `Super Pom` through your `pom.xml`.
