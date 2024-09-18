@@ -72,3 +72,11 @@ The `pom.xml` file works with inheritance. The "father" is `Super Pom`, related 
 ![images/pom-xml-inheritance.png](images/pom-xml-inheritance.png)
 
 The instructor mentioned [this site](https://maven.apache.org/ref/3.0.4/maven-model-builder/super-pom.html). You can override some configuration that you get from `Super Pom` through your `pom.xml`.
+
+We can see in the `Super Pom` file that we have central repository. It make sense, right? When using `npm` or `compose` we do not have to configure a place to get the packages, we only install the packages :). But we can change this configuration.
+
+[https://repo.maven.apache.org/maven2](https://repo.maven.apache.org/maven2/) is an example of central repository. You can access this link and you will see a website with links to the some packages (JUnit as example).
+
+You can change this configuration in your `pom.xml` or in the file `settings.xml` (global, `mirror` xml node).
+
+We have a local repository (for cache as example in `$HOME/.m2/repository` - Linux path, `HOME` in upper case).
