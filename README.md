@@ -80,3 +80,26 @@ We can see in the `Super Pom` file that we have central repository. It make sens
 You can change this configuration in your `pom.xml` or in the file `settings.xml` (global, `mirror` xml node).
 
 We have a local repository (for cache as example in `$HOME/.m2/repository` - Linux path, `HOME` in upper case).
+
+
+## adding dependencies through Maven
+
+You can access [this site](https://mvnrepository.com/). There you must get the piece of XML to insert in `pom.xml`. Example:
+
+```
+<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.11.0</version>
+    <scope>test</scope>
+</dependency>
+```
+
+Then you can insert in `pom.xml` (under the `dependencies` node). And you mus execute the following command (as example):
+
+```
+mvn compile
+```
+
+**Observation: there is  `mvn install` command besides the instructor did not mentioned this command.
