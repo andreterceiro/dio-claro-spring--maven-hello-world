@@ -132,3 +132,19 @@ mvn compile
 ```
 
 **Observation: there is  `mvn install` command besides the instructor did not mentioned this command.
+
+
+## Optional dependencies
+
+Please see the following image:
+
+![optional dependencies image](images/optional-dependencies.png).
+
+
+## Exclusions
+
+Teacher explained [in this class](https://web.dio.me/course/gerenciamento-de-dependencias-e-build-em-java-com-maven/learning/78054996-0f91-4f2f-9b17-672f548a3cef?back=/track/coding-the-future-claro-java-spring-boot&tab=undefined&moduleId=undefined).
+
+As you can see in the following image, you can configure an exlusion in the "destination" project to avoid, as example, conflicts with versions.
+
+![exclusions](images/exclusions.png)
