@@ -148,3 +148,29 @@ Teacher explained [in this class](https://web.dio.me/course/gerenciamento-de-dep
 As you can see in the following image, you can configure an exlusion in the "destination" project to avoid, as example, conflicts with versions.
 
 ![exclusions](images/exclusions.png)
+
+
+## Maven build lifecycle
+
+There are 3 main cycles. The cycles has `phases`. And the phases has `goals`.
+
+The 3 main cycles are:
+
+- default. Main cycle. Has 23 `phases`. **Main** `phases` (these `phases` are commands):
+    - validate;
+    - compile;
+    - test-compile;
+    - test;
+    - integration-test;
+    - package;
+    - install;
+    - deploy.
+- clean. Intermediate cycle, responsible for cleaning the project. Has 3 `phases`:
+    - pre-clean;
+    - clean;
+    - post-clean.
+- site. Moment of publishing. Has 4 `phases`:
+    - pre-site;
+    - site;
+    - post-site;
+    - site-deploy.
