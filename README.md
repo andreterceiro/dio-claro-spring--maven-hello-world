@@ -54,6 +54,22 @@ If you enconter errors on executing `mvn test` related to versions (talking in g
 Generates the `.jar` file. Please see the path in the output of this command.
 
 
+### mvn install
+
+When you execute this command in a project with the right format to interact with Maven, the local project will be installed in the local repository and will can be installed in other local projects. You will need to copy from `pom.xml` to create a new dependency in the "destination" project:
+
+- groupId;
+- artifactID;
+- version.
+
+Besides, the teacher inserted a new "require" line in `module-info.java` of the destination project. The teacher mentioned that is a Java 11 question. I don't have this file in my local project (I am using Java 8). Please see [the class](https://web.dio.me/course/gerenciamento-de-dependencias-e-build-em-java-com-maven/learning/e4cefc39-9b41-4a41-abfb-bfbb3d166d71?back=/track/coding-the-future-claro-java-spring-boot&tab=undefined&moduleId=undefined) if you have any doubt.
+
+The teacher explained that we have two types of dependencies:
+
+- **direct**: declared in pom.xml;
+- **transitive**: dependency of your dependency.
+
+
 ## Other artifacts
 
 You can see as example [here](https://maven.apache.org/archetypes/index.html) other artifacts. When you click in the link of an artifact you will can see the "`mvn`" command related to this artifact.
