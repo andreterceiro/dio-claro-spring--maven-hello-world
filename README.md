@@ -69,6 +69,19 @@ The teacher explained that we have two types of dependencies:
 - **direct**: declared in pom.xml;
 - **transitive**: dependency of your dependency.
 
+To avoid problems in getting a big package because you have many dependencies of your dependencies, the teacher talked about scopes [here](https://web.dio.me/course/gerenciamento-de-dependencias-e-build-em-java-com-maven/learning/7b8b4e0e-787a-4a13-8777-c2e7eed3f6de?back=/track/coding-the-future-claro-java-spring-boot&tab=undefined&moduleId=undefined). The default scope is `compile`, but you can have 6 types of scopes to use.
+
+Types of scopes:
+
+- compile;
+- runtime;
+- import;
+- system;
+- provided;
+- test.
+
+Please see [the video of the class](https://web.dio.me/course/gerenciamento-de-dependencias-e-build-em-java-com-maven/learning/7b8b4e0e-787a-4a13-8777-c2e7eed3f6de?back=/track/coding-the-future-claro-java-spring-boot&tab=undefined&moduleId=undefined) for more details.
+
 
 ## Other artifacts
 
