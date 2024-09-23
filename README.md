@@ -174,3 +174,7 @@ The 3 main cycles are:
     - site;
     - post-site;
     - site-deploy.
+
+# Summary of Maven course
+
+[presentation](summary-maven.pptx)
